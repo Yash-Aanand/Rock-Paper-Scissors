@@ -223,6 +223,11 @@ h3 {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  #ym,
+  #cm {
+    width: 30px;
   }
 }
