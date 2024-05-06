@@ -17,6 +17,9 @@ const reset = document.querySelector('.reset')
 let psc = 0;
 let csc = 0;
 
+var win = new Audio('images/win.mp3')
+var lose = new Audio('images/lose.wav')
+var tied = new Audio('images/tie.wav')
 
 cr.addEventListener('click', () => {
     pm ='Rock';
@@ -71,6 +74,7 @@ const playGame = function(yom) {
     if (yom == 'Rock'){
             if (com == 'Rock'){
                 wm.innerHTML = 'Tie!'
+                tie()
 
             } else if(com == 'Paper'){
                 wm.innerHTML = 'Computer Wins!'
@@ -88,6 +92,7 @@ const playGame = function(yom) {
 
             } else if(com == 'Paper'){
                 wm.innerHTML = 'Tie!'
+                tie()
 
             } else if(com == 'Scissors'){
                 wm.innerHTML = 'Computer Wins!'
@@ -104,6 +109,7 @@ const playGame = function(yom) {
 
             } else if(com == 'Scissors'){
                 wm.innerHTML = 'Tie!'
+                tie()
             }
         
     }   
@@ -112,11 +118,17 @@ const playGame = function(yom) {
 const pwin = function (){
     psc++;
     pscore.innerText = `${psc}`
+    win.play()
 }
 
 const cwin = function (){
     csc++;
     cscore.innerText = `${csc}`
+    lose.play()
+}
+
+const tie = function () {
+    tied.play()
 }
 
 
