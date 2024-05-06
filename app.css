@@ -38,6 +38,7 @@ body {
 .results {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding-left: 30px;
   padding-top: 12px;
   padding-bottom: 20px;
@@ -86,6 +87,7 @@ h1 {
 
 .moves {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid rgb(179, 174, 174);
   background-color: lightskyblue;
@@ -199,4 +201,28 @@ h3 {
   display: inline;
   padding: 0px;
   margin: 0px;
+}
+
+@media (max-width: 520px) {
+  .icon {
+    display: none;
+  }
+
+  .colon {
+    padding: 0px 30px;
+  }
+  p {
+    font-size: 1rem;
+    padding-left: 10;
+  }
+  .results {
+    padding-right: 15px;
+    justify-content: space-evenly;
+    position: relative;
+    right: 5%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
