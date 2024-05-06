@@ -68,8 +68,6 @@ const playGame = function(yom) {
     ym.innerText = `${yom}`;
     let com = choices[Math.floor(Math.random()*3)];
     cm.innerHTML = `${com}`;
-    console.log(yom)
-    console.log(com)
 
     if (yom == 'Rock'){
             if (com == 'Rock'){
