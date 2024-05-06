@@ -1,5 +1,3 @@
-const gameState = true;
-
 const cr = document.querySelector('.rock');
 const cp = document.querySelector('.paper');
 const cs = document.querySelector('.scissor');
@@ -13,6 +11,9 @@ const cscore = document.querySelector('#computerscore')
 
 const submit = document.querySelector('.submit')
 const reset = document.querySelector('.reset')
+const vol = document.querySelector('.volume')
+const voli = document.querySelector('#volume')
+let vols = true
 
 let psc = 0;
 let csc = 0;
@@ -42,6 +43,18 @@ cs.addEventListener('click', () => {
 
 submit.addEventListener('click', () => {
     playGame(pm)
+})
+
+vol.addEventListener('click', () => {
+    if (vols){
+        voli.src = 'images/mute.svg';
+        vols = false;
+        console.log('muted')
+    } else { 
+        voli.src = 'images/unmute.svg';
+        vols = true;
+        console.log('unmuted')
+    }
 })
 
 reset.addEventListener('click', () => {
@@ -116,17 +129,23 @@ const playGame = function(yom) {
 const pwin = function (){
     psc++;
     pscore.innerText = `${psc}`
-    win.play()
+    if (vols){
+        win.play()
+    }
 }
 
 const cwin = function (){
     csc++;
     cscore.innerText = `${csc}`
-    lose.play()
+    if (vols){
+        lose.play()
+    }
 }
 
 const tie = function () {
-    tied.play()
+    if (vols){
+        tied.play()
+    }
 }
 
 
