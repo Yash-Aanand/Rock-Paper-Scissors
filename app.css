@@ -1,0 +1,202 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-image: url("https://img.freepik.com/premium-vector/delightful-seamless-pattern-capturing-charm-vintage-floral-wallpaper_818261-4080.jpg");
+  background-repeat: repeat;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.game {
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  border: 5px solid black;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.scores {
+  padding: 20px 0px;
+  padding-top: 0px;
+  border-bottom: 1px solid rgb(179, 174, 174);
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.score {
+  display: inline-block;
+  padding: 5px;
+  margin-top: 0px;
+  margin: 0px;
+  width: 40%;
+}
+
+.results {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.result {
+  display: inline;
+}
+
+.colon {
+  width: 20px;
+  justify-self: center;
+  padding-left: 60px;
+  padding-right: 90px;
+}
+
+p {
+  display: flex;
+  margin: 3px;
+  text-align: left;
+  justify-content: flex-start;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.title {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px rgb(179, 174, 174) solid;
+  background-color: lightsalmon;
+}
+
+h2 {
+  padding-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  padding-top: 20px;
+  margin-top: 0px;
+  font-size: 2rem;
+  margin-bottom: 0px;
+  font-weight: 900;
+}
+
+.moves {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(179, 174, 174);
+  background-color: lightskyblue;
+}
+
+.option {
+  display: inline-block;
+  border: 10px solid black;
+  border-radius: 190px;
+  padding: 4px;
+  margin: 15px;
+  overflow: hidden;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.option:hover {
+  position: relative;
+  transform: scale(1.1);
+  border-color: gold;
+}
+
+#scissors,
+#scissors img {
+  width: 100px;
+}
+
+#rock {
+  width: 100px;
+  overflow: hidden;
+}
+
+#rock img {
+  width: 100px;
+  transform: scale(1.1);
+  position: relative;
+  top: -10px;
+  right: 10px;
+}
+
+#paper,
+#paper img {
+  width: 100px;
+}
+
+h3 {
+  margin: 5px;
+  padding: 5px;
+  font-size: 2rem;
+}
+
+.submit,
+.reset {
+  padding: 10px 40px;
+  margin: 10px 20px;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: inline-block;
+  background-color: rgb(71, 211, 71);
+  border-radius: 12px;
+}
+
+.reset {
+  background-color: rgb(255, 61, 61);
+}
+
+.submit:hover,
+.reset:hover {
+  transform: scale(1.15);
+  border: 2px solid gold;
+}
+
+#playerscore {
+  color: rgb(42, 233, 42);
+  font-size: 3rem;
+}
+
+#computerscore {
+  color: rgb(255, 0, 0);
+  font-size: 3rem;
+}
+
+.chosen {
+  border-color: darkorange;
+}
+
+.final {
+  background-color: #28282b;
+  color: gold;
+  display: block;
+  padding-top: 25px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(179, 174, 174);
+}
+
+.finish {
+  background-color: rgb(238, 238, 238);
+}
+
+.icon img {
+  width: 65px;
+  position: relative;
+
+  display: inline-block;
+}
+
+.icon {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
