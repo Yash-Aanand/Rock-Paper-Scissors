@@ -49,7 +49,7 @@ reset.addEventListener('click', () => {
     pscore.innerHTML = `${psc}`
     ym.innerHTML = 'TBD'
     cm.innerHTML = 'TBD'
-    wm.innerHTML = 'Pick you Choice!'
+    wm.innerHTML = 'Pick your Choice!'
     clear()
 
 })
