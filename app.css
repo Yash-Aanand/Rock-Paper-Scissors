@@ -1,7 +1,8 @@
 body {
+  margin: 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100vh;
   align-items: center;
   text-align: center;
   background-image: url("https://img.freepik.com/premium-vector/delightful-seamless-pattern-capturing-charm-vintage-floral-wallpaper_818261-4080.jpg");
@@ -11,9 +12,10 @@ body {
 }
 
 .game {
+  margin-top: 25px;
   background-color: white;
   text-align: center;
-  display: inline-block;
+  display: block;
   border: 5px solid black;
   border-radius: 50px;
   overflow: hidden;
@@ -271,11 +273,50 @@ h3 {
     height: 50px;
   }
 
-  .game {
-    margin-top: 150px;
-  }
-
   .volume {
     margin: 0px 110px;
   }
+}
+
+footer {
+ 
+  margin-top: 40px;
+  margin-top: 50px 0px 0px 0px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.footer {
+  
+  background-color: rgb(255, 226, 209)(195, 195, 195);
+  text-align: center;
+  display:flex;
+}
+
+footer p {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.footer-icons img  {
+  margin: 20px 10px;
+  display: inline-block;
+  width: 50px;
+
+}
+.footer-icons:nth-of-type(3) img {
+  margin: 12px 10px;
+  width: 66px;
+
+}
+
+.footer-icons{
+  transition: 0.2s;
+}
+.footer-icons:hover{
+  transform: scale(1.2);
 }
