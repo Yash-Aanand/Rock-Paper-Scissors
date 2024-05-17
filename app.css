@@ -237,7 +237,7 @@ h3 {
 
 footer {
  
-  margin-top: 40px;
+  margin-top: 10px;
   margin-top: 50px 0px 0px 0px ;
   width: 100%;
   display: flex;
@@ -276,6 +276,32 @@ footer p {
 }
 .footer-icons:hover{
   transform: scale(1.2);
+}
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --Purples {    font-family: Rocher;
+  base-palette: 6;
+}
+
+.purples {
+  text-decoration: none;
+  font-palette: --Purples;
+  font-family: 'Rocher';
+  font-size: 4rem;
+  transition: 0.2s;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+
+.purples:hover {
+  transform: scale(1.1);
+  text-shadow: 3px 3px 2px rgb(255, 214, 68);
 }
 
 
